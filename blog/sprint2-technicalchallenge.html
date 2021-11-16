@@ -8,6 +8,22 @@
     </head>
     <Body>
         <h1 class="header">What are the differences between relative, absolute, and fixed positioning?</h1>
+        <p>Before I discuss the different between these 3 positions, I will explain the first or default position of 'Static'. When you create an element in your html source code, but don't designate a position, the position of the element is set to 'Static'. When viewing this in a web browser, it places the element on the page where it has been placed in the workflow.</p>
+        
+        <p>Relative; -position of an element relative to its’ own placing in the workflow.
+          -elements are NOT removed from document workflow. Other elements will not fill the empty space left in its’ original position.</p>
+        
+        <p>Absolute; -position of an element relative to a parent element.
+        -elements ARE removed from document flow. Other elements will fill the empty space left in its’ original position.</p>
+        
+        <p>Fixed; -position of an element in relation to the viewport.
+        -elements ARE removed from the workflow. Other elements will fill the empty space left in its’ original position</p>
+        
+        <p>Sticky: -new positioning tool. As you scroll down the page, the element will move up the page until a predetermined position is reached on the screen, then it is becomes stuck on the page, and all other content will scroll up beneath it.
+        -Treated as relatively positioned until its containing block crosses a specific threshold (such as setting top value other than auto) within its’ flow root (or container it scrolls within), at which point it is treated as “stuck” until meeting the opposite edge of its’ containing block.
+        -behaves like relative until they are “stuck”, then they are fixed.</p>
+        
+        <p>Z-index (stacking order): -Determines what element will be scrolling beneath which element if there is more then 1 element. Set rules for each element class (Z-index: 1;). Higher ‘z-index’ numbers are on top of lower indexes.</p>
 
 
 
