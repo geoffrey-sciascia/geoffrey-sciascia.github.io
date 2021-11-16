@@ -1,7 +1,5 @@
 body {
-    background-color: Red;
+    background-color: rgb(173, 171, 17);
     text-align: center;
-}
-p {
-    color: blue;
+    font-family: 'Fira Sans', sans-serif;
 }
