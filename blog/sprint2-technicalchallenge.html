@@ -7,47 +7,133 @@
       <link href="../styles/main.css" rel="stylesheet" type="text/css">
     </head>
     <Body>
+      <div>
         <h1 class="header">What are the differences between relative, absolute, and fixed positioning?</h1>
+      </div>
+      <p class="marginspace">w</p>
+      <div>
         <p>A CSS position is a rule set for an element that ultimately controls how it is placed in the viewport. 
           There are 5 CSS positions. They are; Static, Relative, Absolute, Fixed, and Sticky. 
           Keywords used are; top, right, bottom, left. They are always cited in that order. They can have positive and negative values. What these values do, depend on the positioning style used.</p>
+      </div>
 
+      <div>
         <p>Before I discuss the different between these 3 positions, I will explain the first or default position of...</p>
         <h2>Static</h2>
-        <p></p>When you create an element in your html source code, but don't designate a position, the position of the element is set to 'Static'. 
+        <p>When you create an element in your html source code, but don't designate a position, the position of the element is set to 'Static'. 
         When viewing this in a web browser, it places the element on the page where it has been placed in the workflow. 
         This element itself is an example of Static positioning. Its has no CSS positioning rules applied to it and so has no movement from its' original position in the workflow.</p>
-        
+      </div>
+
+      <div>
+        <div>
         <h2>Relative</h2> 
-        <p>A Relative position is the position of an element relative to its’ own placment in the workflow. 
-        Elements are NOT removed from document workflow. Other elements will not fill the empty space left in its’ original position. 
-        You would use this positioning style when you would like an element to appear statically in a position that is different from its' own original position in the document workflow. 
-        An example of the code used on the CSS file is;</p>
-        
-        <p>An example of what this looks like;</p>
+        </div>
+        <div>
+          <p>A Relative position is the position of an element relative to its’ own placment in the workflow. 
+          Elements are NOT removed from document workflow. Other elements will not fill the empty space left in its’ original position. 
+          You would use this positioning style when you would like an element to appear statically in a position that is different from its' own original position in the document workflow. 
+          An example of the code used on the CSS file is;</p>
+        </div>
+        <div>
+          <div>
+              <p class="code">{position: relative;</p>
+              <div>
+                <p class="code"> top: 50px;</p>
+                <div>
+                 <p class="code"> right: 50px;}</p>
+                </div>
+              </div>
+          </div>
+            <div>
+              <p>An example of what this looks like;</p>
 
-        <h2>Absolute</h2>
-        <p>An Absolute position is the position of an element relative to a parent element.
-        Elements ARE removed from document flow. Other elements will fill the empty space left in its’ original position. 
-        This positioning style is used when you have an element nested inside of a 'parent' element, and would like to control how it appears in relation to the 'parent' element.
-        An example of the code used on the CSS file is;</p>
-        
-        <p>An example of what this looks like;</p>
-
-        <h2>Fixed</h2>
-        <p>A fixed position is the position of an element in relation to the viewport.
-        Elements ARE removed from the workflow. Other elements will fill the empty space left in its’ original position
-        This positioning style would be used if you would like an element to appear on the page statically in relation to the viewport, and not move when scrolling up or down the page.
-        An example of the code used on the CSS file is;</p>
-        
-        <p>An example of what this looks like;</p>
-        
-        <h2>Sticky</h2>
-        <p>This is newer positioning tool. As you scroll down the page, the element will move up the page until a predetermined position is reached on the screen, then it becomes static in that position on the page. All other content will scroll up beneath it.
-        The element is treated as relatively positioned until its' containing block crosses a specific threshold (such as setting top value other than auto) within its’ flow root (or container it scrolls within), at which point it is treated as “stuck” until meeting the opposite edge of its’ containing block.
-        -behaves like relative until they are “stuck”, then they are fixed.</p>
-        
-        <p>Z-index (stacking order): -Determines what element will be scrolling beneath which element if there is more then 1 element. Set rules for each element class (Z-index: 1;). Higher ‘z-index’ numbers are on top of lower indexes.</p>
+              <div class="relative">
+                  This element has position:relative;
+              </div>
+              <p>In this example, I have moved the element 50px to the left from its' original position in the center.</p>
+            </div>
+      </div>
+      <div>
+        <div>
+          <h2>Absolute</h2>
+        </div>
+        <div>
+          <p>An Absolute position is the position of an element relative to a parent element.
+          Elements ARE removed from document flow. Other elements will fill the empty space left in its’ original position. 
+          This positioning style is used when you have an element nested inside of a 'parent' element, and would like to control how it appears in relation to the 'parent' element.
+          An example of the code used on the CSS file is;</p>
+        </div>
+        <div>
+          <p class="code">{position: absolute;</p>
+          <div>
+            <p class="code"> top: 50px;</p>
+            <div>
+             <p class="code"> right: 50px;}</p>
+            </div>
+          </div>
+         </div>
+          <p class="nb">PLEASE NOTE that the element this code is affecting must be nested in another element whose position is set to relative.</p>
+          <p>An example of what this looks like;</p>
+          <div class="relative1">
+            This element has position: relative;
+            <div class="absolute">
+                This element has position: absolute;
+            </div>
+        </div>
+        <p>In this example I have placed the 'absolute' box, 80px from the Right side and 80px from the top side of the 'relative' box. </p>
+        </div>
+        <div>
+          <div>
+            <h2>Fixed</h2>
+          </div>
+          <div>
+            <p>A fixed position is the position of an element in relation to the viewport.
+            Elements ARE removed from the workflow. Other elements will fill the empty space left in its’ original position.
+            This positioning style would be used if you would like an element to appear on the page statically in relation to the viewport, and not move when scrolling up or down the page.
+            An example of the code used on the CSS file is;</p>
+          </div>
+          <div>
+            <p class="code">{position: fixed;</p>
+            <div>
+             <p class="code"> top: 50px;</p>
+             <div>
+              <p class="code"> right: 50px;}</p>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>An example of what this looks like would stay on this page at all times no matter where on it you have scrolled. It looks like a image floating on top of all other content on the page and doesn't move from its' position in the screen whether you're scrolling up, down, sideways, or even resizing the window.</p>
+        </div>
+        <div>
+          <div>
+            <h2>Sticky</h2>
+          </div>
+          <div>
+          <p>This is newer positioning tool. As you scroll down the page, the element will move up the page until a predetermined position is reached on the screen, then it becomes static in that position on the page. All other content will scroll up beneath it.
+          The element is treated as relatively positioned until its' containing block crosses a specific threshold (such as setting top value other than auto) within its’ flow root (or container it scrolls within), at which point it is treated as “stuck” until meeting the opposite edge of its’ containing block.
+          The element behaves like a relative element until it is “stuck”, then it is fixed.
+          An example of the code used on the CSS file is;</p>
+          </div>
+          <div>
+            <p class="code">{position: sticky;</p>
+            <div>
+              <p class="code"> top: 0px;}</p>
+            </div>
+          </div>
+          <p>An example of what this looks like is the header for the page. No matter how far down you scroll on the page, the header remains at the top, and everything else scrolls beneath it.</p>
+        </div>
+        <div>
+          <div>
+            <h2>Z-index (stacking order)</h2>
+          </div>
+          <div>
+            <p>The 'z-index' determines what elements will be scrolling beneath or above which other elements, if there is more than 1 element. 
+            Higher ‘z-index’ numbers appear on top of lower indexes. 
+            You set rules for each element tag, class, or id inside the CSS file using the code 'z-index: N;'. The 'N' value can be any number.</p>
+          </div>
+        </div>
 
 
 
