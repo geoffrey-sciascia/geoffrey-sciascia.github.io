@@ -60,6 +60,10 @@ h2 {
   text-decoration: underline;
   font-size: 30px;
 }
+h3 {
+  text-decoration: underline;
+  font-size: 25px;
+}
 .ilu {
   list-style: none;
 }
