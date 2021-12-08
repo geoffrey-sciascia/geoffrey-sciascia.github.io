@@ -1,69 +1,81 @@
 body {
-    background-color: rgb(173, 171, 17);
-    text-align: center;
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 20px;
-}
-.header {
-    font-size: 45px;
-    background-color: blanchedalmond;
-    position: fixed;
-    top: 0;
-    left: 0px;
-    right: 0;
-    height: 110px;
-    z-index: 1;
-}
-img { 
-    width: 45%; 
-  }
-#instagram {
-font-size: 20px;
-  }
-  .footer {
-    font-size: 15px;
-    text-align: right;
-    color: silver;
-  }
-  .code {
-    text-align: left;
-  }
-  .nb {
-    text-align: left;
-    font-size: 12px;
-  }
-  div.relative {
-    position: relative;
-    left: 50px;
-    border: 3px solid #ad3121;
-}
-  div.relative1 {
-    position: relative;
-    width: 400px;
-    height: 200px;
-    border: 3px solid #ad3121;
+  background-color: rgb(173, 171, 17);
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 20px;
 }
 
-  div.absolute {
-    position: absolute;
-    top: 80px;
-    right: 80px;
-    width: 200px;
-    height: 100px;
-    border: 3px solid #ad3121;
+.header {
+  font-size: 45px;
+  background-color: blanchedalmond;
+  position: fixed;
+  top: 0;
+  left: 0px;
+  right: 0;
+  height: 110px;
+  z-index: 1;
 }
+
+img { 
+  width: 45%; 
+}
+
+#instagram {
+  font-size: 20px;
+}
+
+.footer {
+  font-size: 15px;
+  text-align: right;
+  color: silver;
+}
+
+.code {
+  text-align: left;
+}
+
+.nb {
+  text-align: left;
+  font-size: 12px;
+}
+
+div.relative {
+  position: relative;
+  left: 50px;
+  border: 3px solid #ad3121;
+}
+
+div.relative1 {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #ad3121;
+}
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #ad3121;
+}
+
 .marginspace {
   margin-top: 110px;
   color: rgb(173, 171, 17);
 }
+
 h2 {
   text-decoration: underline;
   font-size: 30px;
 }
+
 h3 {
   text-decoration: underline;
   font-size: 25px;
 }
+
 .ilu {
   list-style: none;
 }
