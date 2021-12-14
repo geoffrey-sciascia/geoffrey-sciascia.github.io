@@ -22,18 +22,17 @@ body {
 }
 
 .grid {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     display: flex;
     flex-wrap: wrap;
     border-style: solid;
-    position: relative;
-    left: 625px;
+    
 }
 
 .grid div {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
 }
 
 .snake {
