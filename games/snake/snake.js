@@ -39,8 +39,7 @@ function moveOutcomes() {
         (currentSnake[0] - width < 0 && direction === -width) || // if the snake hits the top
         squares[currentSnake[0] + direction].classList.contains('snake') // if snake goes into itself
     ) {
-        return clearInterval(interval)
-        return alert("Oh no! You've lost the game. Hit Restart!") // this will clear the interval if any of the above happen
+        return clearInterval(interval) // this will clear the interval if any of the above happen
     }
 
     const tail = currentSnake.pop() // removes last item of the array and shows it
