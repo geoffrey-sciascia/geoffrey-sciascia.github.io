@@ -12,7 +12,7 @@ body {
   top: 0;
   left: 0px;
   right: 0;
-  height: 110px;
+  height: auto;
   z-index: 1;
 }
 
@@ -62,7 +62,7 @@ div.absolute {
 }
 
 .marginspace {
-  margin-top: 110px;
+  margin-top: 150px;
   color: rgb(173, 171, 17);
 }
 
