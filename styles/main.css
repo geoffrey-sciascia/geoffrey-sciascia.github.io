@@ -79,3 +79,37 @@ h3 {
 .ilu {
   list-style: none;
 }
+
+@media screen and (min-width: 320px) {
+  #instagram {
+    font-size: 10px;
+  }
+  .footer {
+    font-size: 9px;
+    text-align: right;
+    color: silver;
+  }
+  body {
+    background: linear-gradient(45deg, #98ec53, #d0ff00);
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #instagram {
+    font-size: 10px;
+  }
+  .footer {
+    font-size: 9px;
+    text-align: right;
+    color: silver;
+  }
+  body {
+    background: linear-gradient(45deg, #eca553, #ff5e00);
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 11px;
+  }
+}
