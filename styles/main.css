@@ -113,3 +113,20 @@ h3 {
     font-size: 11px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  #instagram {
+    font-size: 10px;
+  }
+  .footer {
+    font-size: 9px;
+    text-align: right;
+    color: silver;
+  }
+  body {
+    background: linear-gradient(45deg, #ecea53, #ffd700);
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 11px;
+  }
+}
